@@ -268,11 +268,10 @@ h2 { font-size: clamp(2.6rem, 5vw, 4.4rem); }
 }
 .hero-bg {
   position: absolute;
-  inset: -10% 0 auto;
-  height: 80%;
+  inset: 0;
   background:
-    radial-gradient(ellipse at 70% 80%, rgba(216, 56, 48, 0.38), transparent 46%),
-    radial-gradient(ellipse at 20% 10%, rgba(255, 255, 255, 0.05), transparent 40%);
+    radial-gradient(ellipse 78% 62% at 70% 52%, rgba(216, 56, 48, 0.42) 0%, rgba(216, 56, 48, 0.14) 46%, transparent 74%),
+    radial-gradient(ellipse 46% 36% at 16% 0%, rgba(255, 255, 255, 0.05), transparent 70%);
   pointer-events: none;
 }
 .hero-copy { position: relative; z-index: 2; }
@@ -307,12 +306,12 @@ h2 { font-size: clamp(2.6rem, 5vw, 4.4rem); }
 .hero-glow {
   position: absolute;
   left: 50%;
-  bottom: 0;
-  width: 70%;
-  height: 22%;
+  bottom: -8%;
+  width: 78%;
+  height: 46%;
   transform: translateX(-50%);
-  background: radial-gradient(ellipse, rgba(216, 56, 48, 0.55), rgba(216, 56, 48, 0) 68%);
-  filter: blur(8px);
+  background: radial-gradient(ellipse at 50% 70%, rgba(216, 56, 48, 0.5), rgba(216, 56, 48, 0) 70%);
+  filter: blur(18px);
   pointer-events: none;
 }
 .hero-parallax {
