@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" width="640" height="720" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Bayard Auto Center badge</title>
+  <desc id="logoDesc">Shield badge with a front-facing sedan, half white and half red.</desc>
+  <defs>
+
+  <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FBFBFC"/>
+    <stop offset="0.42" stop-color="#A7ADB6"/>
+    <stop offset="0.55" stop-color="#ECEEF1"/>
+    <stop offset="1" stop-color="#5E646E"/>
+  </linearGradient>
+  <linearGradient id="faceL" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3A404A"/>
+    <stop offset="1" stop-color="#23262D"/>
+  </linearGradient>
+  <linearGradient id="faceR" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1C1F26"/>
+    <stop offset="1" stop-color="#0C0D11"/>
+  </linearGradient>
+  <linearGradient id="paintW" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="1" stop-color="#E4E7EC"/>
+  </linearGradient>
+  <linearGradient id="paintR" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E24B43"/>
+    <stop offset="0.55" stop-color="#D83830"/>
+    <stop offset="1" stop-color="#B4231C"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2A3340"/>
+    <stop offset="1" stop-color="#07090C"/>
+  </linearGradient>
+  <clipPath id="halfL"><rect x="0" y="0" width="320" height="720"/></clipPath>
+  <clipPath id="halfR"><rect x="320" y="0" width="320" height="720"/></clipPath>
+  <clipPath id="innerClip"><path d="M 90 66 H 550 C 576 66 590 82 590 108 V 304 C 590 428 514 524 416 606 L 320 662 L 224 606 C 126 524 50 428 50 304 V 108 C 50 82 64 66 90 66 Z"/></clipPath>
+  <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+  </filter>
+
+  </defs>
+  
+  
+  <g id="badge">
+    <path d="M 64 40 H 576 C 608 40 624 58 624 90 V 312 C 624 452 536 560 424 652 L 320 708 L 216 652 C 104 560 16 452 16 312 V 90 C 16 58 32 40 64 40 Z" fill="url(#metal)"/>
+    <path d="M 90 66 H 550 C 576 66 590 82 590 108 V 304 C 590 428 514 524 416 606 L 320 662 L 224 606 C 126 524 50 428 50 304 V 108 C 50 82 64 66 90 66 Z" fill="url(#faceL)" clip-path="url(#halfL)"/>
+    <path d="M 90 66 H 550 C 576 66 590 82 590 108 V 304 C 590 428 514 524 416 606 L 320 662 L 224 606 C 126 524 50 428 50 304 V 108 C 50 82 64 66 90 66 Z" fill="url(#faceR)" clip-path="url(#halfR)"/>
+    <path d="M 320 66 V 662" stroke="#6A707A" stroke-width="1.25" opacity="0.7"/>
+    <g clip-path="url(#innerClip)">
+      <path d="M 252 214 C 286 190 354 190 388 214 L 430 262 C 442 276 448 292 440 306 L 502 318 C 522 324 528 340 516 350 L 456 360 L 464 448 C 468 492 454 520 424 534 L 216 534 C 186 520 172 492 176 448 L 184 360 L 124 350 C 112 340 118 324 138 318 L 200 306 C 192 292 198 276 210 262 Z" fill="none" stroke="#9AA1AB" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M 252 214 C 286 190 354 190 388 214 L 430 262 C 442 276 448 292 440 306 L 502 318 C 522 324 528 340 516 350 L 456 360 L 464 448 C 468 492 454 520 424 534 L 216 534 C 186 520 172 492 176 448 L 184 360 L 124 350 C 112 340 118 324 138 318 L 200 306 C 192 292 198 276 210 262 Z" fill="url(#paintW)" clip-path="url(#halfL)"/>
+      <path d="M 252 214 C 286 190 354 190 388 214 L 430 262 C 442 276 448 292 440 306 L 502 318 C 522 324 528 340 516 350 L 456 360 L 464 448 C 468 492 454 520 424 534 L 216 534 C 186 520 172 492 176 448 L 184 360 L 124 350 C 112 340 118 324 138 318 L 200 306 C 192 292 198 276 210 262 Z" fill="url(#paintR)" clip-path="url(#halfR)"/>
+      <path d="M 272 222 H 368 C 382 222 392 232 400 246 L 424 300 C 428 310 418 316 406 316 H 234 C 222 316 212 310 216 300 L 240 246 C 248 232 258 222 272 222 Z" fill="url(#glass)"/>
+      <path d="M 300 230 H 360 L 372 248 H 312 Z" fill="#FFFFFF" opacity="0.38"/>
+      <path d="M 168 352 H 246 C 258 352 264 360 262 372 L 254 404 C 252 416 240 422 228 422 H 178 C 164 422 156 412 158 400 L 162 366 C 164 356 168 352 168 352 Z" fill="#101318"/>
+      <path d="M 472 352 H 394 C 382 352 376 360 378 372 L 386 404 C 388 416 400 422 412 422 H 462 C 476 422 484 412 482 400 L 478 366 C 476 356 472 352 472 352 Z" fill="#101318"/>
+      <path d="M 182 368 H 236 C 242 368 244 374 242 380 V 400 C 242 408 236 412 228 412 H 188 C 180 412 176 406 178 398 V 376 C 178 370 182 368 182 368 Z" fill="#F4F6F8"/>
+      <path d="M 458 368 H 404 C 398 368 396 374 398 380 V 400 C 398 408 404 412 412 412 H 452 C 460 412 464 406 462 398 V 376 C 462 370 458 368 458 368 Z" fill="#F4F6F8"/>
+      <path d="M 262 356 H 378 C 388 356 392 364 392 374 V 408 C 392 418 384 422 374 422 H 266 C 256 422 248 418 248 408 V 374 C 248 364 252 356 262 356 Z" fill="#0C0E12"/>
+      <path d="M 274 380 H 366" stroke="#D5DAE1" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 274 398 H 366" stroke="#8E949E" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 274 416 H 366" stroke="#D5DAE1" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+      <path d="M 188 456 H 452 C 464 456 470 464 470 476 V 502 C 470 512 460 516 448 516 H 192 C 180 516 170 512 170 502 V 476 C 170 464 176 456 188 456 Z" fill="#0C0E12"/>
+      <path d="M 196 484 H 444" stroke="#3A3F47" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 196 500 H 444" stroke="#2A2E35" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+      <path d="M 160 460 H 180 V 504 H 162 C 154 504 150 496 152 488 Z" fill="#0C0E12"/>
+      <path d="M 480 460 H 460 V 504 H 478 C 486 504 490 496 488 488 Z" fill="#0C0E12"/>
+      <path d="M 320 176 V 530" stroke="#1A1C20" stroke-width="2" opacity="0.45"/>
+    </g>
+  </g>
+
+</svg>
